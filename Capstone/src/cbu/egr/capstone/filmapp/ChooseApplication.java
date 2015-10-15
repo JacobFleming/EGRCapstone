@@ -2,6 +2,8 @@ package cbu.egr.capstone.filmapp;
 
 import javax.swing.JPanel;
 import javax.swing.JButton;
+import javax.swing.UIManager;
+import javax.swing.UnsupportedLookAndFeelException;
 
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -21,9 +23,15 @@ public class ChooseApplication extends JPanel {
 
 	/**
 	 * Create the panel.
+	 * @throws UnsupportedLookAndFeelException 
+	 * @throws IllegalAccessException 
+	 * @throws InstantiationException 
+	 * @throws ClassNotFoundException 
 	 */
-	public ChooseApplication() {
+	public ChooseApplication() throws ClassNotFoundException, InstantiationException, IllegalAccessException, UnsupportedLookAndFeelException {
 		setLayout(null);
+		UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
+
 		
 		JButton btnFilmPermitApp = new JButton("Film Permit Application");
 		btnFilmPermitApp.addMouseListener(new MouseAdapter() {
