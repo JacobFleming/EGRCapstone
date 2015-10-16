@@ -55,22 +55,102 @@ public class ChooseApplication extends JPanel {
 		add(btnFilmPermitApp);
 		
 		JButton btnRoadPermit = new JButton("Road Permit");
+		btnRoadPermit.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				btnRoadPermit.setCursor(new Cursor(Cursor.HAND_CURSOR));
+			}
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				File filmPermit = new File("C:\\Users\\Owner\\Documents\\CBU\\Super Senior\\EGR 401 - Capstone\\Applications\\RoadPermit.pdf");
+				try {
+					Desktop.getDesktop().open(filmPermit);
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+			}
+		});
 		btnRoadPermit.setBounds(276, 69, 139, 23);
 		add(btnRoadPermit);
 		
 		JButton btnAnimalStip = new JButton("Animal Stipulations");
+		btnAnimalStip.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseEntered(MouseEvent e) {
+				btnAnimalStip.setCursor(new Cursor(Cursor.HAND_CURSOR));
+			}
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				File filmPermit = new File("C:\\Users\\Owner\\Documents\\CBU\\Super Senior\\EGR 401 - Capstone\\Applications\\AnimalStipulations.pdf");
+				try {
+					Desktop.getDesktop().open(filmPermit);
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+			}
+		});
 		btnAnimalStip.setBounds(276, 115, 139, 23);
 		add(btnAnimalStip);
 		
 		JButton btnCreditsAgreement = new JButton("Credits Agreement");
+		btnCreditsAgreement.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseEntered(MouseEvent e) {
+				btnCreditsAgreement.setCursor(new Cursor(Cursor.HAND_CURSOR));
+			}
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				File filmPermit = new File("C:\\Users\\Owner\\Documents\\CBU\\Super Senior\\EGR 401 - Capstone\\Applications\\CreditsAgreement.pdf");
+				try {
+					Desktop.getDesktop().open(filmPermit);
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+			}
+		});
 		btnCreditsAgreement.setBounds(276, 161, 139, 23);
 		add(btnCreditsAgreement);
 		
 		JButton btnCommercialFilmStip = new JButton("Commercial Film Stipulations");
+		btnCommercialFilmStip.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseEntered(MouseEvent e) {
+				btnCommercialFilmStip.setCursor(new Cursor(Cursor.HAND_CURSOR));
+			}
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				File filmPermit = new File("C:\\Users\\Owner\\Documents\\CBU\\Super Senior\\EGR 401 - Capstone\\Applications\\CommercialFilmStipulationsSBCRegionalParks.pdf");
+				try {
+					Desktop.getDesktop().open(filmPermit);
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+			}
+		});
 		btnCommercialFilmStip.setBounds(250, 207, 165, 23);
 		add(btnCommercialFilmStip);
 		
 		JButton btnSpecialEffects = new JButton("Special Effects / Hazardous Conditions");
+		btnSpecialEffects.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseEntered(MouseEvent e) {
+				btnSpecialEffects.setCursor(new Cursor(Cursor.HAND_CURSOR));
+			}
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				File filmPermit = new File("C:\\Users\\Owner\\Documents\\CBU\\Super Senior\\EGR 401 - Capstone\\Applications\\SpecialEffectsHazardousConditionsPermit.pdf");
+				try {
+					Desktop.getDesktop().open(filmPermit);
+				} catch (IOException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+			}
+		});
 		btnSpecialEffects.setBounds(198, 253, 217, 23);
 		add(btnSpecialEffects);
 		
