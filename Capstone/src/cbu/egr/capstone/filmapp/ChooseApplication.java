@@ -7,8 +7,24 @@ import javax.swing.JLabel;
 
 import java.awt.Font;
 import javax.swing.JComboBox;
+import javax.swing.JTextField;
+import javax.swing.JCheckBox;
 
 public class ChooseApplication extends JPanel {
+	private JTextField txtCompany;
+	private JTextField txtCoAddress;
+	private JTextField txtCoPhone;
+	private JTextField txtCoFax;
+	private JTextField txtProjTitle;
+	private JTextField txtProdType;
+	private JTextField txtTotalPersonnel;
+	private JTextField txtTotalVehicle;
+	private JTextField txtGenerators;
+	private JTextField txtCars;
+	private JTextField txtTrucks;
+	private JTextField txtRV;
+	private JTextField txtOtherEquip;
+	private JTextField textField_1;
 
 	/**
 	 * Create the panel.
@@ -162,7 +178,7 @@ public class ChooseApplication extends JPanel {
 		add(lblRvs);
 		
 		JLabel lblOther = new JLabel("Other:");
-		lblOther.setBounds(497, 502, 46, 14);
+		lblOther.setBounds(478, 502, 46, 14);
 		add(lblOther);
 		
 		JLabel lblInsurance = new JLabel("Insurance:");
@@ -197,6 +213,295 @@ public class ChooseApplication extends JPanel {
 		lblTraffic.setBounds(600, 75, 75, 14);
 		add(lblTraffic);
 		
+		JLabel lblStunts = new JLabel("Stunts/Special Effects:");
+		lblStunts.setBounds(600, 100, 150, 14);
+		add(lblStunts);
+		
+		JLabel lblPyro = new JLabel("Pyrotechnic Specifics:");
+		lblPyro.setBounds(600, 125, 150, 14);
+		add(lblPyro);
+		
+		JLabel lblHazard = new JLabel("Hazardous Materials to be Used:");
+		lblHazard.setBounds(600, 150, 185, 14);
+		add(lblHazard);
+		
+		JLabel lblAnimals = new JLabel("Animals to be Used:");
+		lblAnimals.setBounds(600, 175, 125, 14);
+		add(lblAnimals);
+		
+		JLabel lblAerial = new JLabel("Aerial Stunts/Elements:");
+		lblAerial.setBounds(600, 200, 150, 14);
+		add(lblAerial);
+		
+		txtCompany = new JTextField();
+		txtCompany.setBounds(59, 107, 293, 20);
+		add(txtCompany);
+		txtCompany.setColumns(10);
+		
+		txtCoAddress = new JTextField();
+		txtCoAddress.setBounds(53, 132, 299, 20);
+		add(txtCoAddress);
+		txtCoAddress.setColumns(10);
+		
+		txtCoPhone = new JTextField();
+		txtCoPhone.setBounds(62, 157, 105, 20);
+		add(txtCoPhone);
+		txtCoPhone.setColumns(10);
+		
+		txtCoFax = new JTextField();
+		txtCoFax.setBounds(224, 157, 128, 20);
+		add(txtCoFax);
+		txtCoFax.setColumns(10);
+		
+		txtProjTitle = new JTextField();
+		txtProjTitle.setBounds(73, 355, 279, 20);
+		add(txtProjTitle);
+		txtProjTitle.setColumns(10);
+		
+		JComboBox cmboxMonth_1 = new JComboBox();
+		cmboxMonth_1.setMaximumRowCount(12);
+		cmboxMonth_1.setBounds(97, 377, 77, 20);
+		add(cmboxMonth_1);
+		cmboxMonth_1.setMaximumRowCount(12);
+		cmboxMonth_1.addItem("January");
+		cmboxMonth_1.addItem("February");
+		cmboxMonth_1.addItem("March");
+		cmboxMonth_1.addItem("April");
+		cmboxMonth_1.addItem("May");
+		cmboxMonth_1.addItem("June");
+		cmboxMonth_1.addItem("July");
+		cmboxMonth_1.addItem("August");
+		cmboxMonth_1.addItem("September");
+		cmboxMonth_1.addItem("October");
+		cmboxMonth_1.addItem("November");
+		cmboxMonth_1.addItem("December");
+		
+		JComboBox cmbxDay_1 = new JComboBox();
+		cmbxDay_1.setBounds(184, 377, 55, 20);
+		add(cmbxDay_1);
+		cmbxDay_1.addItem(1);
+		cmbxDay_1.addItem(2);
+		cmbxDay_1.addItem(3);
+		cmbxDay_1.addItem(4);
+		cmbxDay_1.addItem(5);
+		cmbxDay_1.addItem(6);
+		cmbxDay_1.addItem(7);
+		cmbxDay_1.addItem(8);
+		cmbxDay_1.addItem(9);
+		cmbxDay_1.addItem(10);
+		cmbxDay_1.addItem(11);
+		cmbxDay_1.addItem(12);
+		cmbxDay_1.addItem(13);
+		cmbxDay_1.addItem(14);
+		cmbxDay_1.addItem(15);
+		cmbxDay_1.addItem(16);
+		cmbxDay_1.addItem(17);
+		cmbxDay_1.addItem(18);
+		cmbxDay_1.addItem(19);
+		cmbxDay_1.addItem(20);
+		cmbxDay_1.addItem(21);
+		cmbxDay_1.addItem(22);
+		cmbxDay_1.addItem(23);
+		cmbxDay_1.addItem(24);
+		cmbxDay_1.addItem(25);
+		cmbxDay_1.addItem(26);
+		cmbxDay_1.addItem(27);
+		cmbxDay_1.addItem(28);
+		cmbxDay_1.addItem(29);
+		cmbxDay_1.addItem(30);
+		cmbxDay_1.addItem(31);
+		
+		JComboBox cmboxYear_1 = new JComboBox();
+		cmboxYear_1.setBounds(245, 377, 55, 20);
+		for (int i = 2015; i < 2065; i++){
+			cmboxYear_1.addItem(i);
+		}
+		add(cmboxYear_1);
+		
+		JLabel lblTo = new JLabel("to");
+		lblTo.setBounds(310, 383, 46, 14);
+		add(lblTo);
+		
+		JComboBox cmboxMonth_2 = new JComboBox();
+		cmboxMonth_2.setMaximumRowCount(12);
+		cmboxMonth_2.setBounds(331, 377, 77, 20);
+		add(cmboxMonth_2);
+		cmboxMonth_2.setMaximumRowCount(12);
+		cmboxMonth_2.addItem("January");
+		cmboxMonth_2.addItem("February");
+		cmboxMonth_2.addItem("March");
+		cmboxMonth_2.addItem("April");
+		cmboxMonth_2.addItem("May");
+		cmboxMonth_2.addItem("June");
+		cmboxMonth_2.addItem("July");
+		cmboxMonth_2.addItem("August");
+		cmboxMonth_2.addItem("September");
+		cmboxMonth_2.addItem("October");
+		cmboxMonth_2.addItem("November");
+		cmboxMonth_2.addItem("December");
+		
+		JComboBox cmbxDay_2 = new JComboBox();
+		cmbxDay_2.setBounds(418, 377, 55, 20);
+		add(cmbxDay_2);
+		cmbxDay_2.addItem(1);
+		cmbxDay_2.addItem(2);
+		cmbxDay_2.addItem(3);
+		cmbxDay_2.addItem(4);
+		cmbxDay_2.addItem(5);
+		cmbxDay_2.addItem(6);
+		cmbxDay_2.addItem(7);
+		cmbxDay_2.addItem(8);
+		cmbxDay_2.addItem(9);
+		cmbxDay_2.addItem(10);
+		cmbxDay_2.addItem(11);
+		cmbxDay_2.addItem(12);
+		cmbxDay_2.addItem(13);
+		cmbxDay_2.addItem(14);
+		cmbxDay_2.addItem(15);
+		cmbxDay_2.addItem(16);
+		cmbxDay_2.addItem(17);
+		cmbxDay_2.addItem(18);
+		cmbxDay_2.addItem(19);
+		cmbxDay_2.addItem(20);
+		cmbxDay_2.addItem(21);
+		cmbxDay_2.addItem(22);
+		cmbxDay_2.addItem(23);
+		cmbxDay_2.addItem(24);
+		cmbxDay_2.addItem(25);
+		cmbxDay_2.addItem(26);
+		cmbxDay_2.addItem(27);
+		cmbxDay_2.addItem(28);
+		cmbxDay_2.addItem(29);
+		cmbxDay_2.addItem(30);
+		cmbxDay_2.addItem(31);
+		
+		JComboBox cmboxYear_2 = new JComboBox();
+		cmboxYear_2.setBounds(478, 377, 55, 20);
+		for (int i = 2015; i < 2065; i++){
+			cmboxYear_2.addItem(i);
+		}
+		add(cmboxYear_2);
+		
+		txtProdType = new JTextField();
+		txtProdType.setBounds(97, 405, 255, 20);
+		add(txtProdType);
+		txtProdType.setColumns(10);
+		
+		txtTotalPersonnel = new JTextField();
+		txtTotalPersonnel.setBounds(88, 449, 86, 20);
+		add(txtTotalPersonnel);
+		txtTotalPersonnel.setColumns(10);
+		
+		txtTotalVehicle = new JTextField();
+		txtTotalVehicle.setBounds(133, 474, 86, 20);
+		add(txtTotalVehicle);
+		txtTotalVehicle.setColumns(10);
+		
+		txtGenerators = new JTextField();
+		txtGenerators.setBounds(87, 499, 59, 20);
+		add(txtGenerators);
+		txtGenerators.setColumns(10);
+		
+		txtCars = new JTextField();
+		txtCars.setColumns(10);
+		txtCars.setBounds(193, 499, 59, 20);
+		add(txtCars);
+		
+		txtTrucks = new JTextField();
+		txtTrucks.setColumns(10);
+		txtTrucks.setBounds(302, 499, 59, 20);
+		add(txtTrucks);
+		
+		txtRV = new JTextField();
+		txtRV.setColumns(10);
+		txtRV.setBounds(405, 499, 59, 20);
+		add(txtRV);
+		
+		txtOtherEquip = new JTextField();
+		txtOtherEquip.setColumns(10);
+		txtOtherEquip.setBounds(511, 499, 59, 20);
+		add(txtOtherEquip);
+		
+		textField_1 = new JTextField();
+		textField_1.setBounds(133, 549, 99, 20);
+		add(textField_1);
+		textField_1.setColumns(10);
+		
+		JComboBox cmboxMonth_3 = new JComboBox();
+		cmboxMonth_3.setMaximumRowCount(12);
+		cmboxMonth_3.setBounds(321, 546, 77, 20);
+		add(cmboxMonth_3);
+		cmboxMonth_3.setMaximumRowCount(12);
+		cmboxMonth_3.addItem("January");
+		cmboxMonth_3.addItem("February");
+		cmboxMonth_3.addItem("March");
+		cmboxMonth_3.addItem("April");
+		cmboxMonth_3.addItem("May");
+		cmboxMonth_3.addItem("June");
+		cmboxMonth_3.addItem("July");
+		cmboxMonth_3.addItem("August");
+		cmboxMonth_3.addItem("September");
+		cmboxMonth_3.addItem("October");
+		cmboxMonth_3.addItem("November");
+		cmboxMonth_3.addItem("December");
+		
+		JComboBox cmbxDay_3 = new JComboBox();
+		cmbxDay_3.setBounds(408, 546, 55, 20);
+		add(cmbxDay_3);
+		cmbxDay_3.addItem(1);
+		cmbxDay_3.addItem(2);
+		cmbxDay_3.addItem(3);
+		cmbxDay_3.addItem(4);
+		cmbxDay_3.addItem(5);
+		cmbxDay_3.addItem(6);
+		cmbxDay_3.addItem(7);
+		cmbxDay_3.addItem(8);
+		cmbxDay_3.addItem(9);
+		cmbxDay_3.addItem(10);
+		cmbxDay_3.addItem(11);
+		cmbxDay_3.addItem(12);
+		cmbxDay_3.addItem(13);
+		cmbxDay_3.addItem(14);
+		cmbxDay_3.addItem(15);
+		cmbxDay_3.addItem(16);
+		cmbxDay_3.addItem(17);
+		cmbxDay_3.addItem(18);
+		cmbxDay_3.addItem(19);
+		cmbxDay_3.addItem(20);
+		cmbxDay_3.addItem(21);
+		cmbxDay_3.addItem(22);
+		cmbxDay_3.addItem(23);
+		cmbxDay_3.addItem(24);
+		cmbxDay_3.addItem(25);
+		cmbxDay_3.addItem(26);
+		cmbxDay_3.addItem(27);
+		cmbxDay_3.addItem(28);
+		cmbxDay_3.addItem(29);
+		cmbxDay_3.addItem(30);
+		cmbxDay_3.addItem(31);
+		
+		JComboBox cmboxYear_3 = new JComboBox();
+		cmboxYear_3.setBounds(469, 546, 55, 20);
+		for (int i = 2015; i < 2065; i++){
+			cmboxYear_3.addItem(i);
+		}
+		add(cmboxYear_3);
+		
+		JCheckBox chckbxPropOwnPermission = new JCheckBox("Yes/No");
+		chckbxPropOwnPermission.setBounds(197, 573, 97, 23);
+		add(chckbxPropOwnPermission);
+		
+		JCheckBox chckbxRoadEncroach = new JCheckBox("Yes/No");
+		chckbxRoadEncroach.setBounds(225, 595, 97, 23);
+		add(chckbxRoadEncroach);
+		
+		JCheckBox chckbxPolice = new JCheckBox("Yes/No");
+		chckbxPolice.setBounds(105, 618, 97, 23);
+		add(chckbxPolice);
+		
+		JCheckBox chckbxFire = new JCheckBox("Yes/No");
+		chckbxFire.setBounds(90, 641, 97, 23);
+		add(chckbxFire);
 		
 		UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 
