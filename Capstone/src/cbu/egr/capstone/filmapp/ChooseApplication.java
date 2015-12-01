@@ -5,11 +5,18 @@ import javax.swing.UIManager;
 import javax.swing.UnsupportedLookAndFeelException;
 import javax.swing.JLabel;
 
+import java.awt.Color;
+import java.awt.Cursor;
 import java.awt.Font;
+
 import javax.swing.JComboBox;
 import javax.swing.JTextField;
 import javax.swing.JCheckBox;
 import javax.swing.JTextArea;
+import javax.swing.JButton;
+
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 
 public class ChooseApplication extends JPanel {
 	private JTextField txtCompany;
@@ -673,10 +680,54 @@ public class ChooseApplication extends JPanel {
 		txtAerial.setBounds(736, 196, 602, 23);
 		add(txtAerial);
 		
+		JButton btnGeneratePermit = new JButton("Generate Permit");
+		btnGeneratePermit.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseEntered(MouseEvent arg0) {
+				btnGeneratePermit.setCursor(new Cursor(Cursor.HAND_CURSOR));
+			}
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				getApplicationInformation();
+			}
+		});
+		btnGeneratePermit.setBounds(850, 282, 150, 23);
+		btnGeneratePermit.setBackground(Color.GRAY);
+		add(btnGeneratePermit);
+		
 		
 		
 		
 		UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
 
+	}
+	
+	public void getApplicationInformation(){
+		String company = txtCompany.getText().toString().trim();
+		String companyAddress = txtCoAddress.getText().toString().trim();
+		String companyPhone = txtCoPhone.getText().toString().trim();
+		String companyFax = txtCoFax.getText().toString().trim();
+		String projectTitle = txtProjTitle.getText().toString().trim();
+		String productionType = txtProdType.getText().toString().trim();
+		//Add a Field for Production Dates
+		
+		int totalPersonnel = Integer.parseInt(txtTotalPersonnel.getText().toString().trim());
+		int totalEquipment = Integer.parseInt(txtTotalVehicle.getText().toString().trim());
+		int generators = Integer.parseInt(txtGenerators.getText().toString().trim());
+		int cars = Integer.parseInt(txtCars.getText().toString().trim());
+		int trucks = Integer.parseInt(txtTrucks.getText().toString().trim());
+		int rv = Integer.parseInt(txtRV.getText().toString().trim());
+		int otherEquip = Integer.parseInt(txtOtherEquip.getText().toString().trim());
+		
+		//Add Insurance Fields
+		
+		//Add Checkbox Fields
+		
+		String stuntsSPFX = txtStuntsSPFX.getText().toString().trim();
+		String pyro = txtPyro.getText().toString().trim();
+		String hazard = txtHazard.getText().toString().trim();
+		String animals = txtAnimals.getText().toString().trim();
+		String aerial = txtAerial.getText().toString().trim();
+		
 	}
 }
